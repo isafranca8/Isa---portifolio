@@ -1,0 +1,164 @@
+:root {
+    --roxo: #8A2BE2;
+    --roxo-escuro: #5D1A9C;
+    --preto: #0f0f14;
+    --cinza: #b3b3b3;
+    --branco: #ffffff;
+}
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/* HERO */
+
+.portfolio-hero {
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+.portfolio-hero h1 {
+    font-size: 38px;
+    color: var(--roxo);
+    margin-bottom: 10px;
+}
+
+.portfolio-hero p {
+    color: var(--cinza);
+    font-size: 16px;
+}
+
+/* CONTAINER */
+
+.portfolio-container {
+    padding: 40px 8% 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+
+.card {
+    background: #161622;
+    border-radius: 18px;
+    width: 320px;
+    padding: 30px;
+    border: 1px solid rgba(138, 43, 226, 0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    border: 1px solid var(--roxo);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2);
+}
+
+/* TÍTULO */
+
+.card h3 {
+    color: var(--roxo);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* TEXTO */
+
+.card p {
+    color: var(--cinza);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* TAGS TECNOLOGIAS */
+
+.tech {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tech span {
+    background: rgba(138, 43, 226, 0.1);
+    color: var(--roxo);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+/* BOTÃO */
+
+.btn-outline {
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 1px solid var(--roxo);
+    border-radius: 20px;
+    color: var(--roxo);
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #121218;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.btn-outline:hover {
+    background: var(--roxo);
+    color: white;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--branco);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--roxo);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121218;
+    border-top: 1px solid rgba(138, 43, 226, 0.2);
+    color: var(--cinza);
+}
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        padding: 40px 5% 80px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 28px;
+    }
+}

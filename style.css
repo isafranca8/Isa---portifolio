@@ -1,0 +1,173 @@
+:root {
+    --roxo: #8A2BE2;
+    --roxo-escuro: #5D1A9C;
+    --preto: #0f0f14;
+    --cinza: #b3b3b3;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #121218;
+    border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.logo {
+    color: var(--roxo);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--branco);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--roxo);
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #0f0f14 60%, #161622 100%);
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: var(--cinza);
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* BOTÃO */
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: var(--roxo);
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--roxo-escuro);
+}
+
+/* SOBRE */
+#sobre {
+    padding: 100px 8%;
+}
+
+#sobre h3 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 28px;
+    color: var(--roxo);
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* FOTO CIRCULAR */
+.sobre-foto img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--roxo);
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.4);
+}
+
+.sobre-texto {
+    max-width: 500px;
+    color: var(--cinza);
+    line-height: 1.6;
+}
+
+/* CONTATO */
+#contato {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+#contato h3 {
+    color: var(--roxo);
+    margin-bottom: 30px;
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contato-links a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contato-links a:hover {
+    color: var(--roxo);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121218;
+    border-top: 1px solid rgba(138, 43, 226, 0.2);
+    color: var(--cinza);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
