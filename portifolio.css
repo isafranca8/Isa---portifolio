@@ -6,7 +6,6 @@
     --branco: #ffffff;
 }
 
-/* RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +17,6 @@ body {
     background-color: var(--preto);
     color: var(--branco);
 }
-
-/* HERO */
 
 .portfolio-hero {
     text-align: center;
@@ -37,7 +34,6 @@ body {
     font-size: 16px;
 }
 
-/* CONTAINER */
 
 .portfolio-container {
     padding: 40px 8% 100px;
@@ -46,8 +42,6 @@ body {
     gap: 30px;
     flex-wrap: wrap;
 }
-
-/* CARD */
 
 .card {
     background: #161622;
@@ -64,7 +58,6 @@ body {
     box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2);
 }
 
-/* TÍTULO */
 
 .card h3 {
     color: var(--roxo);
@@ -72,15 +65,12 @@ body {
     font-size: 20px;
 }
 
-/* TEXTO */
-
 .card p {
     color: var(--cinza);
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
-/* TAGS TECNOLOGIAS */
 
 .tech {
     display: flex;
@@ -98,18 +88,6 @@ body {
     border: 1px solid rgba(138, 43, 226, 0.2);
 }
 
-/* BOTÃO */
-
-.btn-outline {
-    text-decoration: none;
-    padding: 8px 18px;
-    border: 1px solid var(--roxo);
-    border-radius: 20px;
-    color: var(--roxo);
-    transition: 0.3s;
-    font-size: 14px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -119,10 +97,6 @@ header {
     border-bottom: 1px solid rgba(138, 43, 226, 0.2);
 }
 
-.btn-outline:hover {
-    background: var(--roxo);
-    color: white;
-}
 nav ul {
     list-style: none;
     display: flex;
@@ -147,7 +121,6 @@ footer {
     border-top: 1px solid rgba(138, 43, 226, 0.2);
     color: var(--cinza);
 }
-/* RESPONSIVO */
 
 @media (max-width: 768px) {
     .portfolio-container {
