@@ -12,7 +12,18 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
 
+.card-link .card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.card-link .card:hover {
+    transform: scale(1.03);
+}
 body {
     background-color: var(--preto);
     color: var(--branco);
